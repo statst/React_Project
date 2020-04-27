@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SearchRecipes from './Components/SearchRecipes';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-     
-      </header>
+      <h1>CookPot</h1>
+      <SearchRecipes />
     </div>
   );
 }
