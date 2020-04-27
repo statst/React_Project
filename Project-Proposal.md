@@ -37,9 +37,10 @@ My app is called CookPot. It's a recipe app designed for users who have hard tim
 
 Sample Json
 
-```json
+```yaml
 {
-q: "chicken",
+    "result":
+"q: "chicken",
 from: 0,
 to: 10,
 more: true,
