@@ -37,7 +37,7 @@ My app is called CookPot. It's a recipe app designed for users who have hard tim
 
 Sample Json
 
-![](Images/Snip20200426_1.png)
+![](Images/Snip20200427_1.png)
 
 
 ##
