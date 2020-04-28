@@ -1,15 +1,18 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-function SearchRecipes(){
-    return (
-			<form className='recipeSearch'>
-				<input placeholder='Search' type='text' name='searchString' required />
-				<button type='submit'>Search</button>
-			</form>
-		);
+import RecipeList from './RecipeList';
+const SearchResults = ({ recipes }) => {
+	if (!recipes.length) {
+		return <h2>No Recipe Found!</h2>
+	}
+	return (
+		<div className='recipes'>
+			{recipes.map((recipe) => (
+				<RecipeList key={recipe.id} image={recipe.recipe.image} name={recipe.recipe.label} />)	
+			)}
+		</div>
+	);
 }
+  
 
-export default SearchRecipes;
+
+export default SearchResults;
