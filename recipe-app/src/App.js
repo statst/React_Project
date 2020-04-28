@@ -23,7 +23,7 @@ function App() {
     
     axios.get(url)
     .then(response => {
-      setRecipes(response.data);
+      setRecipes(response.data.hits);
       console.log(response);
     })
     .catch(console.error);
