@@ -6,7 +6,7 @@ import SearchRecipes from './Components/SearchRecipes';
 import axios from 'axios';
 import SearchHeader from './Components/SearchHeader';
 import nextId from 'react-id-generator';
-
+import { BrowserRouter, Route} from 'react-router-dom';
 function App() {
   // const searchRecipe = {
 	const	key= process.env.REACT_APP_RECIPE_KEY;
@@ -41,20 +41,37 @@ function App() {
   function handleSubmit(event){
     event.preventDefault();
     setQuery(searchString);
-    setSearchString('')
   }
   return (
 		<div className='App'>
-			<h1>CookPot</h1>
+			<h1 className='Heading'>CookPot</h1>
 			<SearchForm
 				handleChange={handleChange}
 				handleSubmit={handleSubmit}
 				searchString={searchString}
 			/>
 			<SearchHeader lastSearch={lastSearch} />
-      {recipe.map(dish => (
-				<RecipeList key={dish.recipe.id} title={dish.recipe.label} calories={dish.recipe.calories} image={dish.recipe.image}/>))}
-			 {/* <RecipeList /> */}
+			{recipe.map((dish, index) => (
+				<RecipeList
+					key={index}
+					title={dish.recipe.label}
+					calories={dish.recipe.calories}
+					image={dish.recipe.image}
+					ingredients={dish.recipe.ingredients}
+				/>
+    //      <BrowserRouter>
+    //   <React.Fragment>
+    //     <Navbar />
+    //     <div className="container">
+    //       <Switch>
+    //         <Route exact path="/" component={SearchForm} />
+    //         <Route exact path="/ReceipeList/:name" component={RecipeList} />
+    //       </Switch>
+    //     </div>
+    //   </React.Fragment>
+    // </BrowserRouter>
+			))}
+			{/* <RecipeList /> */}
 			{/* < SearchRecipes /> */}
 		</div>
 	);

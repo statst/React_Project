@@ -21,11 +21,16 @@ body {
   margin: 0;
   padding: 0 1rem;
 }
-
+.Heading{
+  background-color: #cc5c69;
+  padding: 30px;
+  color: white;
+  margin-bottom: 2rem;
+}
 button {
-  background-color: var(--primary);
+  background-color:#56e6eb;
   border: 0;
-  color: var(--white);
+  color:white;
   flex-grow: 0;
   font-size: 1.2rem;
   line-height: 1;
@@ -34,7 +39,7 @@ button {
 }
 
 input {
-  background-color: var(--secondary-light);
+  background-color: #e3eff8;
   border: 2px solid var(--secondary);
   color: var(--white);
   flex-grow: 1;
