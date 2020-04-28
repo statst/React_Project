@@ -12,7 +12,7 @@ function App() {
 	const	key= process.env.REACT_APP_RECIPE_KEY;
 	const APP_ID= '013e9ac4';
   // };
-    const url = `https://api.edamam.com/search?q=yes&app_id=${APP_ID}&app_key=${key}`;
+    const url = `https://api.edamam.com/search?q=pasta&app_id=${APP_ID}&app_key=${key}`;
   const [recipe, setRecipes] =useState([]);
   const [searchString, setSearchString] = useState('recipe');
    const [lastSearch, setLastSearch] = useState('');
@@ -51,7 +51,7 @@ function App() {
 			<SearchHeader lastSearch={lastSearch} />
       {recipe.map(dish => (
 				<RecipeList key={dish.id} title={dish.recipe.label} calories={dish.recipe.calories} image={dish.recipe.image}/>))}
-			// <RecipeList />
+			 {/* <RecipeList /> */}
 			{/* < SearchRecipes /> */}
 		</div>
 	);

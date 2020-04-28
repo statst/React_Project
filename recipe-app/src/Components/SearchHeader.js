@@ -1,11 +1,11 @@
 import React from 'react';
 
-function SearchHeader({ lastSearch }) {
+function SearchHeader({ label }) {
 	return (
 		<header>
 			<h1>Recipe</h1>
 			<p className='muted'>
-				Showing results for <strong>{lastSearch}</strong>
+				Showing results for <strong>{label}</strong>
 			</p>
 		</header>
 	);
