@@ -4,6 +4,8 @@ import SearchForm from './Components/SearchForm';
 import RecipeList from './Components/RecipeList';
 import SearchRecipes from './Components/SearchRecipes';
 import axios from 'axios';
+import SearchHeader from './Components/SearchHeader';
+import nextId from 'react-id-generator';
 
 function App() {
   // const searchRecipe = {
@@ -11,29 +13,32 @@ function App() {
 	const APP_ID= '013e9ac4';
   // };
     const url = `https://api.edamam.com/search?q=yes&app_id=${APP_ID}&app_key=${key}`;
-  const [recipes, setRecipes] =useState([]);
-  const [searchString, setSearchString] = useState('recipes');
+  const [recipe, setRecipes] =useState([]);
+  const [searchString, setSearchString] = useState('recipe');
+   const [lastSearch, setLastSearch] = useState('');
   useEffect(()=>{
-     getRecipes();
+     getRecipes(searchString);
      console.log('use effect');
   }, []
 );
-  function getRecipes(){
-    // const url = `https://api.edamam.com/search?q=yes&app_id=${searchRecipe.APP_ID}&app_key=${searchRecipe.key}`;
-    
-    axios.get(url)
-    .then(response => {
-      setRecipes(response.data.hits);
-      console.log(response);
-    })
-    .catch(console.error);
-}
+  function getRecipes(searchString) {
+		// const url = `https://api.edamam.com/search?q=yes&app_id=${searchRecipe.APP_ID}&app_key=${searchRecipe.key}`;
+		axios
+			.get(url)
+			.then((response) => {
+				setRecipes(response.data.hits);
+        console.log(response.data.hits);
+        setLastSearch(searchString);
+        setSearchString('');
+			})
+			.catch(console.error);
+	}
   function handleChange(event){
     setSearchString(event.target.value);
   }
   function handleSubmit(event){
     event.preventDefault();
-    getRecipes();
+    getRecipes(searchString);
   }
   return (
 		<div className='App'>
@@ -43,7 +48,11 @@ function App() {
 				handleSubmit={handleSubmit}
 				searchString={searchString}
 			/>
-      <RecipeList />
+			<SearchHeader lastSearch={lastSearch} />
+      {recipe.map(dish => (
+				<RecipeList key={dish.id} title={dish.recipe.label} calories={dish.recipe.calories} image={dish.recipe.image}/>))}
+			// <RecipeList />
+			{/* < SearchRecipes /> */}
 		</div>
 	);
 }

@@ -13,7 +13,7 @@
   --primary: #56e6eb;
   --secondary: #6fa7e7;
   --secondary-light: #e3eff8;
-  --white: #fff;
+  --white: rgb(17, 15, 15);
 }
 body {
   font-family: sans-serif;
