@@ -12,14 +12,16 @@ function App() {
 	const	key= process.env.REACT_APP_RECIPE_KEY;
 	const APP_ID= '013e9ac4';
   // };
-    const url = `https://api.edamam.com/search?q=pasta&app_id=${APP_ID}&app_key=${key}`;
+    // const url = `https://api.edamam.com/search?q=pasta&app_id=${APP_ID}&app_key=${key}`;
   const [recipe, setRecipes] =useState([]);
   const [searchString, setSearchString] = useState('recipe');
    const [lastSearch, setLastSearch] = useState('');
+   const [query, setQuery] = useState('');
+   const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${key}`;
   useEffect(()=>{
      getRecipes(searchString);
      console.log('use effect');
-  }, []
+  }, [query]
 );
   function getRecipes(searchString) {
 		// const url = `https://api.edamam.com/search?q=yes&app_id=${searchRecipe.APP_ID}&app_key=${searchRecipe.key}`;
@@ -38,7 +40,8 @@ function App() {
   }
   function handleSubmit(event){
     event.preventDefault();
-    getRecipes(searchString);
+    setQuery(searchString);
+    setSearchString('')
   }
   return (
 		<div className='App'>
@@ -50,7 +53,7 @@ function App() {
 			/>
 			<SearchHeader lastSearch={lastSearch} />
       {recipe.map(dish => (
-				<RecipeList key={dish.id} title={dish.recipe.label} calories={dish.recipe.calories} image={dish.recipe.image}/>))}
+				<RecipeList key={dish.recipe.id} title={dish.recipe.label} calories={dish.recipe.calories} image={dish.recipe.image}/>))}
 			 {/* <RecipeList /> */}
 			{/* < SearchRecipes /> */}
 		</div>

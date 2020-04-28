@@ -9,7 +9,7 @@ const SearchRecipes = ({ recipe }) => {
 	return (
 		<div>
 			{recipe.map(dish => (
-				<RecipeList key = {dish.id} title={dish.recipe.label} calories={dish.recipe.calories} image={dish.recipe.image}/>)	
+				<RecipeList key = {dish.recipe.label} title={dish.recipe.label} calories={dish.recipe.calories} image={dish.recipe.image}/>)	
 			)}
 		</div>
 	);
