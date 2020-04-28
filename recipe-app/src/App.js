@@ -7,13 +7,14 @@ import axios from 'axios';
 import SearchHeader from './Components/SearchHeader';
 import nextId from 'react-id-generator';
 import { BrowserRouter, Route} from 'react-router-dom';
+
 function App() {
   // const searchRecipe = {
 	const	key= process.env.REACT_APP_RECIPE_KEY;
 	const APP_ID= '013e9ac4';
   // };
     // const url = `https://api.edamam.com/search?q=pasta&app_id=${APP_ID}&app_key=${key}`;
-  const [recipe, setRecipes] =useState([]);
+  const [recipe, setRecipe] =useState([]);
   const [searchString, setSearchString] = useState('recipe');
    const [lastSearch, setLastSearch] = useState('');
    const [query, setQuery] = useState('');
@@ -28,7 +29,7 @@ function App() {
 		axios
 			.get(url)
 			.then((response) => {
-				setRecipes(response.data.hits);
+				setRecipe(response.data.hits);
         console.log(response.data.hits);
         setLastSearch(searchString);
         setSearchString('');
@@ -51,28 +52,7 @@ function App() {
 				searchString={searchString}
 			/>
 			<SearchHeader lastSearch={lastSearch} />
-			{recipe.map((dish, index) => (
-				<RecipeList
-					key={index}
-					title={dish.recipe.label}
-					calories={dish.recipe.calories}
-					image={dish.recipe.image}
-					ingredients={dish.recipe.ingredients}
-				/>
-    //      <BrowserRouter>
-    //   <React.Fragment>
-    //     <Navbar />
-    //     <div className="container">
-    //       <Switch>
-    //         <Route exact path="/" component={SearchForm} />
-    //         <Route exact path="/ReceipeList/:name" component={RecipeList} />
-    //       </Switch>
-    //     </div>
-    //   </React.Fragment>
-    // </BrowserRouter>
-			))}
-			{/* <RecipeList /> */}
-			{/* < SearchRecipes /> */}
+			{ recipe.length > 0 && < SearchRecipes recipe ={recipe}/>}
 		</div>
 	);
 }

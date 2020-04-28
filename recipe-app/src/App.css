@@ -22,7 +22,7 @@ body {
   padding: 0 1rem;
 }
 .Heading{
-  background-color: #cc5c69;
+  background-color: #d36a76;
   padding: 30px;
   color: white;
   margin-bottom: 2rem;
@@ -40,20 +40,40 @@ button {
 
 input {
   background-color: #e3eff8;
-  border: 2px solid var(--secondary);
+  border: 2px solid  #6fa7e7;
   color: var(--white);
   flex-grow: 1;
   font-size: 1.2rem;
   padding: 0.75rem 1rem;
   width: 100%;
+  box-shadow: -1px 2px 34px -13px;
 }
 .recipeSearch {
   align-items: center;
   display: flex;
 }
+.muted {
+  color: #a1a1a1;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+h1,
+p {
+  margin: 0;
+  color: rgb(102, 102, 77);
+}
 @media (min-width: 600px) {
   button + button,
   input + button {
     margin-left: 1rem;
+  }
+  header {
+    align-items: center;
+    flex-direction: row;
   }
 }
