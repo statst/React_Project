@@ -2,12 +2,12 @@ import React from 'react';
 
 const RecipeList=(props) => {
 	return (
-		<div className='recipe'>
-			<h1>{props.title}</h1>
-			<p>{props.calories}</p>
-			<img src={props.image} alt={props.title} />
+		<div >
+			<h1>{props.recipe.label}</h1>
+			<p>{props.recipe.calories}</p>
+			<img src={props.recipe.image} alt={props.recipe.title} />
 			<ol>
-				{props.ingredients.map((ingredient, index) => (
+				{props.recipe.ingredients.map((ingredient, index) => (
 					<li key={index}>{ingredient.text}</li>
 				))}
 			</ol>

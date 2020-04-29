@@ -9,6 +9,7 @@ import nextId from 'react-id-generator';
 import { BrowserRouter, Route} from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import DisplayRecipe from './Components/DisplayRecipe';
+import Recipe from './Components/Recipe';
 
 function App() {
   // const searchRecipe = {
@@ -66,6 +67,15 @@ function App() {
 					);
 				}}
 			/>
+
+			{/* <Route
+				path='/recipe/:label'
+				render={(routerProps) => {
+					return <Recipe match={routerProps.match} recipe={recipe} />;
+				}}
+			/> */}
+			{/* <Recipe recipe={recipe} /> */}
+			{/* <RecipeList /> */}
 			{/* <SearchForm
 				handleChange={handleChange}
 				handleSubmit={handleSubmit}
