@@ -7,6 +7,8 @@ import axios from 'axios';
 import SearchHeader from './Components/SearchHeader';
 import nextId from 'react-id-generator';
 import { BrowserRouter, Route} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import DisplayRecipe from './Components/DisplayRecipe';
 
 function App() {
   // const searchRecipe = {
@@ -45,14 +47,32 @@ function App() {
   }
   return (
 		<div className='App'>
-			<h1 className='Heading'>CookPot</h1>
-			<SearchForm
+			<nav>
+				<Link to='/'>
+					<h1 className='Heading'>CookPot</h1>
+				</Link>
+			</nav>
+			<Route
+				path='/'
+				exact={true}
+				render={() => {
+					return (
+						<DisplayRecipe
+							handleChange={handleChange}
+							handleSubmit={handleSubmit}
+							searchString={searchString}
+							recipe={recipe}
+						/>
+					);
+				}}
+			/>
+			{/* <SearchForm
 				handleChange={handleChange}
 				handleSubmit={handleSubmit}
-				searchString={searchString}
-			/>
-			<SearchHeader lastSearch={lastSearch} />
-			{ recipe.length > 0 && < SearchRecipes recipe ={recipe}/>}
+        searchString={searchString}
+			/> */}
+			{/* <SearchHeader lastSearch={lastSearch} />
+			{recipe.length > 0 && <SearchRecipes recipe={recipe} />} */}
 		</div>
 	);
 }
