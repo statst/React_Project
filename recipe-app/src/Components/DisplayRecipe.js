@@ -5,7 +5,7 @@ import Recipe from './RecipeList';
 import SearchRecipes from './SearchRecipes';
 
 
-function Home({ handleChange, handleSubmit, searchString, recipe }) {
+function Home({ handleChange, handleSubmit, searchString, recipe, url }) {
 	return (
 		<>
 			<SearchForm
@@ -13,6 +13,7 @@ function Home({ handleChange, handleSubmit, searchString, recipe }) {
 				handleSubmit={handleSubmit}
 				searchString={searchString}
 				recipe={recipe}
+				url ={url}
 			/>
 		<SearchRecipes recipe = {recipe} />
 		</>

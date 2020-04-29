@@ -1,17 +1,26 @@
 import React from 'react';
+import Recipe from './Recipe'
+import { Link } from 'react-router-dom';
 
 const RecipeList=(props) => {
 	return (
-		<div >
-			<h1>{props.recipe.label}</h1>
-			<p>{props.recipe.calories}</p>
-			<img src={props.recipe.image} alt={props.recipe.title} />
-			<ol>
-				{props.recipe.ingredients.map((ingredient, index) => (
-					<li key={index}>{ingredient.text}</li>
-				))}
-			</ol>
-		</div>
+		<>
+			{props.recipe.map((dish, i) => (
+				// <Link to={`/RecipeList/${dish.recipe.label}`}>
+					<Recipe
+						key={i}
+						title={dish.recipe.label}
+						calories={dish.recipe.calories}
+						img={dish.recipe.image}
+						ingredients={dish.recipe.ingredients}
+						url={dish.recipe.url}
+					/>
+				// </Link>
+			))}
+		</>
 	);
 }
+
+	
+
 export default RecipeList;
