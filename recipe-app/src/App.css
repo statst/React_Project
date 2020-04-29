@@ -24,8 +24,14 @@ body {
 .Heading{
   background-color: #d36a76;
   padding: 30px;
-  color: white;
+  color: rgb(64, 91, 240);
   margin-bottom: 2rem;
+  /* background-image: url('/Images/sliced-graham-cake-1639567.jpg'); */
+  background-image: url('/Images/fruit-salads-in-plate-1640774.jpg');
+   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 button {
   background-color:#56e6eb;
@@ -62,10 +68,20 @@ header {
   padding: 1rem 0;
 }
 
-h1,
+h1{
+  margin: 0;
+  color: rgb(32, 56, 53);
+/* font-family: Arial, Helvetica, sans-serif; */
+font-style: inherit;
+font: 1em sans-serif;
+font-size: 28px;
+font-style: oblique;
+}
 p {
   margin: 0;
-  color: rgb(102, 102, 77);
+  /* color: rgb(102, 102, 77); */
+font-family: Arial, Helvetica, sans-serif;
+font-style: italic;
 }
 @media (min-width: 600px) {
   button + button,

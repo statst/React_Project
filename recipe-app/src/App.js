@@ -51,9 +51,11 @@ function App() {
 		<div className='App'>
 			<nav>
 				<Link to='/'>
-					<h1 className='Heading'>CookPot</h1>
+					<div className='Heading'>
+						<h1>CookPot</h1>
+						<p>Find your favorite recipes here</p>
+					</div>
 				</Link>
-				{/* <Link to='/RecipeList'>Recipe</Link> */}
 			</nav>
 			<Route
 				path='/'
@@ -73,27 +75,12 @@ function App() {
 			<Route
 				path='/RecipeList'
 				render={(routerProps) => {
-					return <RecipeList match={routerProps.match} 
-					recipe = {recipe} />;
+					return <RecipeList match={routerProps.match} recipe={recipe} />;
 				}}
 			/>
-			{/* <Route 
-				path='/RecipeList/:label'
-				render={(routerProps) => {	
-					return	(<Recipe match={routerProps.match}
-					recipe = {recipe} 
-					/>)
-				}}
-			/> */}
-			{/* <Recipe recipe={recipe} /> */}
-			{/* <RecipeList /> */}
-			{/* <SearchForm
-				handleChange={handleChange}
-				handleSubmit={handleSubmit}
-        searchString={searchString}
-			/> */}
-			{/* <SearchHeader lastSearch={lastSearch} />
-			{recipe.length > 0 && <SearchRecipes recipe={recipe} />} */}
+			<SearchHeader lastSearch={lastSearch} />
+
+			{/* {recipe.length > 0 && <SearchRecipes recipe={recipe} />} */}
 		</div>
 	);
 }
