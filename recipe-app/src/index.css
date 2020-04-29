@@ -5,6 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('/Images/sliced-graham-cake-1639567.jpg');
+ /* background-image: url('/Images/fruit-salads-in-plate-1640774.jpg'); */
+ /* background-image: url('/Images/fruits-eating-food-on-wood-326268.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 code {
