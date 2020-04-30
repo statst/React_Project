@@ -16,12 +16,10 @@ function App() {
 	key: process.env.REACT_APP_RECIPE_KEY,
 	APP_ID: '013e9ac4',
   };
-    // const url = `https://api.edamam.com/search?q=pasta&app_id=${APP_ID}&app_key=${key}`;
   const [recipe, setRecipe] =useState([]);
   const [searchString, setSearchString] = useState('');
    const [lastSearch, setLastSearch] = useState('');
    const [query, setQuery] = useState(false);
-//    const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${key}`;
   useEffect(()=>{
      getRecipes(searchString);
      console.log('use effect');
