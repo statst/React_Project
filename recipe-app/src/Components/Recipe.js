@@ -11,7 +11,7 @@ const Recipe = ({ title, calories, img, ingredients, url }) => {
 		<div className='card mt-5'>
 			<h3 className='card-title text-center'>{title}</h3>
 			<p>
-				<span className='help-text'>Calories: {calories}</span>
+				<span className='calorie'>Calories: {calories}</span>
 			</p>
 			<span className='card-text'>Ingredients</span>
 			<ul className='card-text-list'>
