@@ -2,23 +2,39 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Recipe = ({ title, calories, img, ingredients, url }) => {
-	console.log(url);
+	const dishDetails = (
+		<a href={url} target='_blank' rel='noopener noreferrer'>
+			<button className='btn btn-success'>Click to see recipe details</button>
+		</a>
+	);
 	return (
-		<div>
-			<h2>{title}</h2>
+			
+		<div className='card mt-5'>
+			<h3 className='card-title text-center'>{title}</h3>
 			<p>
-				<span>Calories:</span> {calories}
+				<span className='help-text'>Calories: {calories}</span>
 			</p>
-			<h3>Ingredients:</h3>
+			<span className='card-text'>Ingredients:</span>
 			<ul>
 				{ingredients.map((ingredient, i) => (
 					<li key={i}>{ingredient.text}</li>
 				))}
 			</ul>
-			<img src={img} alt='Dish' />
-			<a href={url} target='_blank' rel='noopener noreferrer'>
+			<center>
+				<img
+					className='rounded-circle mt-2'
+					width='200px'
+					height='200px'
+					src={img}
+					alt={title}
+				/>
+			</center>
+			{/* <img src={img} alt='Dish' /> */}
+			{/* <a href={url} target='_blank' rel='noopener noreferrer'>
 				Recipe Details
-			</a>
+			</a> */}
+		
+			<center>{dishDetails}</center>
 		</div>
 	);
 };

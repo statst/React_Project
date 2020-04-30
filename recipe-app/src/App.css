@@ -22,16 +22,36 @@ body {
   padding: 0 1rem;
 }
 .Heading{
-  background-color: #d36a76;
   padding: 30px;
-  color: rgb(64, 91, 240);
+  color: rgb(54, 53, 50);
   margin-bottom: 2rem;
-  /* background-image: url('/Images/sliced-graham-cake-1639567.jpg'); */
   background-image: url('/Images/fruit-salads-in-plate-1640774.jpg');
    background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-size: 20px;
+  text-shadow: 0px 0px;
+  font-weight: bold;
+}
+div.app {
+  /* background: url('/Images/fruit-salads-in-plate-1640774.jpg') repeat; */
+  border: 2px solid black;
+}
+
+div.Heading h1{
+  margin: 30px;
+  /* background-color: #ffffff; */
+  /* border: 1px solid rgb(243, 231, 231); */
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  /* opacity: 0.6; */
+  font-weight: bold;
+}
+div.Heading p {
+  margin: 5%;
+  font-weight: bold;
+  color: #6d4949;
+  font-family: "Lucida Console", Courier, monospace;
 }
 button {
   background-color:#56e6eb;
@@ -58,30 +78,72 @@ input {
   align-items: center;
   display: flex;
 }
-.muted {
-  color: #a1a1a1;
+.muted p{
+  color: #bd7070;
 }
 header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem 0;
+  
 }
 
 h1{
   margin: 0;
-  color: rgb(32, 56, 53);
-/* font-family: Arial, Helvetica, sans-serif; */
+   color: #974545;
+  /* color: #e45311f5; */
 font-style: inherit;
-font: 1em sans-serif;
-font-size: 28px;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 5.9vw;
 font-style: oblique;
+ text-shadow: 2px 2px;
 }
 p {
   margin: 0;
-  /* color: rgb(102, 102, 77); */
+  color: rgb(90, 33, 10);
 font-family: Arial, Helvetica, sans-serif;
 font-style: italic;
+}
+
+h2{
+  margin: 0;
+   color: #0f885a;
+  /* color: #e45311f5; */
+font-style: inherit;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 5.9vw;
+font-style: oblique;
+ text-shadow: 2px 2px;
+}
+h3{
+  margin: 0;
+   color: #0d4d34;
+  /* color: #e45311f5; */
+font-style: inherit;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 5.9vw;
+font-style: oblique;
+ text-shadow: 1px 1px;
+}
+h4{
+  margin: 0;
+   color: #362535;
+  /* color: #e45311f5; */
+font-style: inherit;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 5.9vw;
+font-style: oblique;
+ text-shadow: 1px 1px;
+}
+ul{
+  margin: 0;
+   color: #236236;
+  /* color: #e45311f5; */
+font-style: inherit;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 1.9vw;
+font-style: oblique;
 }
 @media (min-width: 600px) {
   button + button,

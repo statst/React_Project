@@ -1,23 +1,32 @@
 import React from 'react';
 import Recipe from './Recipe'
 import { Link } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const RecipeList=(props) => {
 	return (
-		<>
-			{props.recipe.map((dish, i) => (
-				// <Link to={`/RecipeList/${dish.recipe.label}`}>
-					<Recipe
-						key={i}
-						title={dish.recipe.label}
-						calories={dish.recipe.calories}
-						img={dish.recipe.image}
-						ingredients={dish.recipe.ingredients}
-						url={dish.recipe.url}
+		<div>
+			<Container>
+				<Row>
+					{props.recipe.map((dish, i) => (
+						// <Link to={`/RecipeList/${dish.recipe.label}`}>
+							<Recipe
+								key={i}
+								title={dish.recipe.label}
+								calories={dish.recipe.calories}
+								img={dish.recipe.image}
+								ingredients={dish.recipe.ingredients}
+								url={dish.recipe.url}
 					/>
-				// </Link>
-			))}
-		</>
+						
+					))}
+				</Row>
+			</Container>
+		</div>
 	);
 }
 
