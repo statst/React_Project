@@ -116,13 +116,13 @@ font-size: 5.9vw;
 font-style: oblique;
  text-shadow: 2px 2px;
 }
-h3{
+.card-title{
   margin: 0;
-   color: #0d4d34;
+   /* color: #4b5551; */
   /* color: #e45311f5; */
 font-style: inherit;
 font-family: "Lucida Console", Courier, monospace;
-font-size: 5.9vw;
+font-size: 40px;
 font-style: oblique;
  text-shadow: 1px 1px;
 }
@@ -136,16 +136,31 @@ font-size: 5.9vw;
 font-style: oblique;
  text-shadow: 1px 1px;
 }
-ul{
-  margin: 0;
-   color: #236236;
-  /* color: #e45311f5; */
-font-style: inherit;
-font-family: "Lucida Console", Courier, monospace;
-font-size: 1.9vw;
-font-style: oblique;
+.help-text{
+font-size: 3.2vw;
+color: rgb(66, 78, 78);
 }
-@media (min-width: 600px) {
+ul{
+margin: 0;
+color: #464e49;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 4.1vw;
+font-style: oblique;
+text-align: left;
+}
+span{
+font-family: "Lucida Console", Courier, monospace;
+font-size: 3.5vw;
+font-style: inherit;
+text-align: left;
+}
+.success{
+  background-color: rgb(13, 110, 110);
+  padding: 20px 10px 20px 10px;
+  margin: 10px;
+  font-size: 25px;
+}
+/* @media (min-width: 600px) {
   button + button,
   input + button {
     margin-left: 1rem;
@@ -154,4 +169,4 @@ font-style: oblique;
     align-items: center;
     flex-direction: row;
   }
-}
+} */

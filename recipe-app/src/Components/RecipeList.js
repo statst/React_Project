@@ -13,7 +13,6 @@ const RecipeList=(props) => {
 			<Container>
 				<Row>
 					{props.recipe.map((dish, i) => (
-						// <Link to={`/RecipeList/${dish.recipe.label}`}>
 							<Recipe
 								key={i}
 								title={dish.recipe.label}
