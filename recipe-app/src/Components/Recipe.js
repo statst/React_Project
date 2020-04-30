@@ -14,7 +14,7 @@ const Recipe = ({ title, calories, img, ingredients, url }) => {
 				<span className='help-text'>Calories: {calories}</span>
 			</p>
 			<span className='card-text'>Ingredients</span>
-			<ul>
+			<ul className='card-text-list'>
 				{ingredients.map((ingredient, i) => (
 					<li key={i}>{ingredient.text}</li>
 				))}

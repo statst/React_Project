@@ -79,8 +79,6 @@ function App() {
 				}}
 			/>
 			<SearchHeader lastSearch={lastSearch} />
-
-			{/* {recipe.length > 0 && <SearchRecipes recipe={recipe} />} */}
 		</div>
 	);
 }

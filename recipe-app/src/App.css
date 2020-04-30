@@ -41,11 +41,9 @@ div.app {
 
 div.Heading h1{
   margin: 30px;
-  /* background-color: #ffffff; */
-  /* border: 1px solid rgb(243, 231, 231); */
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-  /* opacity: 0.6; */
   font-weight: bold;
+  font-size: 70px;
 }
 div.Heading p {
   margin: 5%;
@@ -95,21 +93,20 @@ h1{
   /* color: #e45311f5; */
 font-style: inherit;
 font-family: "Lucida Console", Courier, monospace;
-font-size: 5.9vw;
+font-size: 6.9vw;
 font-style: oblique;
  text-shadow: 2px 2px;
 }
 p {
-  margin: 0;
-  color: rgb(90, 33, 10);
+margin: 0;
+color: rgb(90, 33, 10);
 font-family: Arial, Helvetica, sans-serif;
 font-style: italic;
 }
 
 h2{
-  margin: 0;
-   color: #0f885a;
-  /* color: #e45311f5; */
+margin: 0;
+color: #0f885a;
 font-style: inherit;
 font-family: "Lucida Console", Courier, monospace;
 font-size: 5.9vw;
@@ -117,19 +114,16 @@ font-style: oblique;
  text-shadow: 2px 2px;
 }
 .card-title{
-  margin: 0;
-   /* color: #4b5551; */
-  /* color: #e45311f5; */
+margin: 0;
 font-style: inherit;
 font-family: "Lucida Console", Courier, monospace;
-font-size: 40px;
+font-size: 50px;
 font-style: oblique;
- text-shadow: 1px 1px;
+text-shadow: 1px 1px;
 }
 h4{
-  margin: 0;
-   color: #362535;
-  /* color: #e45311f5; */
+margin: 0;
+color: #362535;
 font-style: inherit;
 font-family: "Lucida Console", Courier, monospace;
 font-size: 5.9vw;
@@ -160,13 +154,8 @@ text-align: left;
   margin: 10px;
   font-size: 25px;
 }
-/* @media (min-width: 600px) {
-  button + button,
-  input + button {
-    margin-left: 1rem;
+@media (min-width: 600px) {
+  .card-text-list{
+    font-size: 20px;
   }
-  header {
-    align-items: center;
-    flex-direction: row;
-  }
-} */
+}
