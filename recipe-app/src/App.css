@@ -1,0 +1,171 @@
+
+.App {
+  text-align: center;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #56e6eb;
+  --secondary: #6fa7e7;
+  --secondary-light: #e3eff8;
+  --white: rgb(17, 15, 15);
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 1rem;
+}
+.Heading{
+  padding: 30px;
+  color: rgb(54, 53, 50);
+  margin-bottom: 2rem;
+  background-image: url('/Images/fruit-salads-in-plate-1640774.jpg');
+   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 20px;
+  text-shadow: 0px 0px;
+  font-weight: bold;
+}
+div.app {
+  border: 2px solid black;
+}
+
+div.Heading h1{
+  margin: 30px;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-weight: bold;
+  font-size: 70px;
+}
+div.Heading p {
+  margin: 5%;
+  font-weight: bold;
+  color: #6d4949;
+  font-family: "Lucida Console", Courier, monospace;
+}
+button {
+  background-color:#56e6eb;
+  border: 0;
+  color:white;
+  flex-grow: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+}
+
+input {
+  background-color: #e3eff8;
+  border: 2px solid  #6fa7e7;
+  color: black;
+  flex-grow: 1;
+  font-size: 1.7rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  box-shadow: -1px 2px 34px -13px;
+}
+.recipeSearch {
+  align-items: center;
+  display: flex;
+}
+.muted p{
+  color: #bd7070;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+  
+}
+
+h1{
+margin: 0;
+color: #974545;
+font-style: inherit;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 9.9vw;
+font-style: oblique;
+ text-shadow: 2px 2px;
+}
+p {
+margin: 0;
+color: rgb(90, 33, 10);
+font-family: Arial, Helvetica, sans-serif;
+font-style: italic;
+font-size: 24px;
+}
+
+h2{
+margin: 0;
+color: #0f885a;
+font-style: inherit;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 9.9vw;
+font-style: oblique;
+ text-shadow: 2px 2px;
+}
+.card-title{
+margin: 0;
+font-style: inherit;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 50px;
+font-style: oblique;
+text-shadow: 1px 1px;
+}
+.card-text{
+
+}
+h4{
+margin: 0;
+color: #362535;
+font-style: inherit;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 5.9vw;
+font-style: oblique;
+ text-shadow: 1px 1px;
+}
+.calorie{
+font-size: 2.0vw;
+color: rgb(66, 78, 78);
+}
+ul{
+margin: 0;
+color: #464e49;
+font-family: "Lucida Console", Courier, monospace;
+font-size: 4.1vw;
+font-style: oblique;
+text-align: left;
+}
+.card-text{
+font-family: "Lucida Console", Courier, monospace;
+font-size: 2.0vw;
+font-style: inherit;
+text-align: left;
+color: #464e49;
+}
+.success{
+background-color: rgb(13, 110, 110);
+padding: 20px 10px 20px 10px;
+margin: 10px;
+font-size: 25px;
+}
+.footer{
+  font-size: 20px;
+  color: rgb(85, 78, 78);
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px;
+}
+@media (min-width: 600px) {
+  .card-text-list{
+  font-size: 20px;
+  }
+}
