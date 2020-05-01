@@ -6,7 +6,7 @@
 ##
 **_Project Description_**
 
-My app is called CookPot. It's a recipe app designed for users who have hard time figuring out which meal to cook. Users can search recipes across the world and then click on a specific dish to see description of recipe. In the future I'd like to add a feature of nutrition facts for each recipe.
+My app is called CookPot. It's a recipe app designed for users who have hard time figuring out which meal to cook. Users can search recipes across the world and then click on a specific dish to see description of recipe. I used React, React Bootstrap and react Hooks to build this project.
 
 ##
 **_Wireframes_**
@@ -43,10 +43,17 @@ This is what app looks like
 ##
 **_Installation Instructions_**
 
-To set up app locally on your system fork and clone this repository
-Install VsCode locally and ensure it is running.
-Lastly, start your server using live server option in VSCode.
+To set up app locally on your system: 
 
-Contribute
+Fork and clone this repository
+
+Install npm dependencies
+
+Install VsCode locally and ensure it is running.
+
+Lastly, start your server using npm start command in CLI.
+
+##
+**_Contribute_**
 
 Source code: https://github.com/statst/React_Project
