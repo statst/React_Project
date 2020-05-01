@@ -120,9 +120,7 @@ font-size: 50px;
 font-style: oblique;
 text-shadow: 1px 1px;
 }
-.card-text{
 
-}
 h4{
 margin: 0;
 color: #362535;
@@ -164,8 +162,21 @@ font-size: 25px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-shadow: 1px 1px;
 }
+.create{
+font-size: 18px;
+color: rgb(51, 37, 37);
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+}
 @media (min-width: 600px) {
   .card-text-list{
   font-size: 20px;
   }
+  .footer{
+  font-size: 20px;
+  color: rgb(85, 78, 78);
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px;
+}
 }
