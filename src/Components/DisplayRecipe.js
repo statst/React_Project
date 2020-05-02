@@ -7,14 +7,14 @@ import SearchRecipes from './SearchRecipes';
 
 function Home({ handleChange, handleSubmit, searchString, recipe, url }) {
 	return (
-		<>
-			<SearchForm
+		 <>
+			{/* <SearchForm
 				handleChange={handleChange}
 				handleSubmit={handleSubmit}
 				searchString={searchString}
 				recipe={recipe}
 				url ={url}
-			/>
+			/> */}
 		<SearchRecipes recipe = {recipe} />
 		</>
 	);
