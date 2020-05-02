@@ -73,6 +73,7 @@ input {
 }
 .recipeSearch {
   align-items: center;
+  align-self: center;
   display: flex;
 }
 .muted p{
@@ -178,5 +179,11 @@ font-weight: bold;
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-shadow: 1px 1px;
+  margin-bottom: 15px;
+  margin-top:400px;
+  background-color: rgb(202, 195, 180);
+}
+.Heading{
+  background-image: url('/Images/fruit-salads-in-plate-1640774.jpg');
 }
 }

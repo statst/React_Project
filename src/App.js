@@ -44,7 +44,7 @@ function App() {
   function handleSubmit(event){
 	event.preventDefault();
 	getRecipes(searchString);
-    setQuery(!query);
+    // setQuery(!query);
   }
   return (
 		<div className='App'>
@@ -52,10 +52,15 @@ function App() {
 				<Link to='/'>
 					<div className='Heading'>
 						<h1>CookPot</h1>
-						<p>Click here to find your favorite recipes</p>
+						<p> Find your favorite recipes here</p>
 					</div>
 				</Link>
 			</nav>
+			<SearchForm
+				handleChange={handleChange}
+				handleSubmit={handleSubmit}
+				searchString={searchString}
+			/>
 			<Route
 				path='/'
 				exact={true}
@@ -73,7 +78,7 @@ function App() {
 			/>
 
 			<Route
-				path='/RecipeList'
+				path='/RecipeList/:label'
 				render={(routerProps) => {
 					return <RecipeList match={routerProps.match} recipe={recipe} />;
 				}}
