@@ -1,8 +1,5 @@
 # React_Project
 
-#
-**Project Proposal**
-
 ##
 **_Project Description_**
 
@@ -11,14 +8,15 @@ My app is called CookPot. It's a recipe app designed for users who have hard tim
 ##
 **_Wireframes_**
 
-![](recipe-app/public/Images/Snip20200430_4.png) 
+![](/Images/Snip20200430_4.png) 
+
 
 ##
 **_Example_**
 
 This is what app looks like
 
-![](recipe-app/public/Images/Snip20200430_7.png)
+![](Images/Snip20200430_7.png)
 
 ##
 **_MVP_**
@@ -57,3 +55,5 @@ Lastly, start your server using npm start command in CLI.
 **_Contribute_**
 
 Source code: https://github.com/statst/React_Project
+
+Search your favorite recipe here: https://cookpot.herokuapp.com/
