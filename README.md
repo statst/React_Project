@@ -8,7 +8,7 @@ My app is called CookPot. It's a recipe app designed for users who have hard tim
 ##
 **_Wireframes_**
 
-![](/Images/Snip20200430_4.png) 
+![](Images/Snip20200430_4.png) 
 
 
 ##
@@ -18,9 +18,9 @@ This is what app looks like
 
 ![](Images/Snip20200430_7.png)
 
+
 ##
 **_MVP_**
-
 ##
 **_User Stories_**
 

@@ -19,7 +19,7 @@ function App() {
 		APP_ID: '013e9ac4',
 	};
 	const [recipe, setRecipe] = useState([]);
-	const [searchString, setSearchString] = useState('pineapple smoothie');
+	const [searchString, setSearchString] = useState('almond ice cream');
 	const [lastSearch, setLastSearch] = useState('');
 	const [query, setQuery] = useState(false);
 	useEffect(() => {
@@ -27,7 +27,7 @@ function App() {
 		console.log('use effect');
 	}, []);
 	function getRecipes(searchString) {
-		const url = `https://api.edamam.com/search?q=${searchString}&app_id=${searchOptions.APP_ID}&app_key=${searchOptions.key}&from=25&to=60&calories=500-1000`;
+		const url = `https://api.edamam.com/search?q=${searchString}&app_id=${searchOptions.APP_ID}&app_key=${searchOptions.key}`;
 		axios
 		.get(url)
 		.then((response) => {
@@ -52,11 +52,11 @@ function App() {
 				<Link to='/'>
 					<div className='Heading'>
 						<h1>CookPot</h1>
-						<SearchHeader lastSearch={lastSearch} />
 						<p> Find your favorite recipes here</p>
 					</div>
 				</Link>
 			</nav>
+				{/* <SearchHeader lastSearch={lastSearch} /> */}
 			<SearchForm
 				handleChange={handleChange}
 				handleSubmit={handleSubmit}
