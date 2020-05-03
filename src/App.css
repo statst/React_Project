@@ -60,7 +60,9 @@ button {
   padding: 0.75rem 1rem;
   text-transform: uppercase;
 }
-
+.row{
+  /* background-color: white; */
+}
 input {
   background-color: #e3eff8;
   border: 2px solid  #6fa7e7;
@@ -110,8 +112,8 @@ font-size: 24px;
 
 h2{
 margin: 0;
-/* color: #2c4138; */
-color: rgb(90, 33, 10);
+color: #04472a;
+/* color: rgb(90, 33, 10); */
 font-style: inherit;
 font-family: "Lucida Console", Courier, monospace;
 font-size: 24px;
@@ -173,16 +175,26 @@ font-family: "Lucida Console", Courier, monospace;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-shadow: 1px 1px;
 }
-
 .create{
 font-size: 18px;
 color: rgb(51, 37, 37);
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-weight: bold;
 }
+.card-body{
+  background-color: rgba(246, 241, 241);
+  font-size: 24px;
+  font-weight: bold;
+
+}
 @media (min-width: 600px) {
   .card-text-list{
   font-size: 20px;
+  }
+  .card-text{
+     font-size: 28px;
+     color: brown;
+     font-weight: bold;
   }
   .footer{
   font-size: 20px;
@@ -196,7 +208,7 @@ font-weight: bold;
   height: 40px;
 }
 .Heading{
-  background-image: url('/Images/fruit-salads-in-plate-1640774.jpg');
+   background-image: url('/Images/fruit-salads-in-plate-1640774.jpg');
 }
 button + button,
   input + button {

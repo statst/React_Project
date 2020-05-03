@@ -9,9 +9,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function SearchRecipes(props) {
-	if (!props.recipe.length) {
-		return <h2>No Recipe Found! Please enter correct input.</h2>;
-	}
 	return (
 		<div>
 			<Container>
@@ -26,9 +23,10 @@ function SearchRecipes(props) {
 									alt={dish.recipe}
 								/>
 								<Card.Body>
-										<Link to={`/RecipeList/${dish.recipe.label}`}>
-											<p>{dish.recipe.label}</p>
-										</Link>
+									{/* <Card.Title>{dish.label}</Card.Title> */}
+									<Link to={`/RecipeList/${dish.recipe.label}`}>
+										<p>{dish.recipe.label}</p>
+									</Link>
 								</Card.Body>
 							</Col>
 						))}

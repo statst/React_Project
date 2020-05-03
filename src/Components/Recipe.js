@@ -13,7 +13,7 @@ const Recipe = ({ title, calories, img, ingredients, url }) => {
 			<p>
 				<span className='calorie'>Calories: {Math.round(calories)}</span>
 			</p>
-			<span className='card-text'>Ingredients</span>
+			<span className='card-text'>Ingredients:</span>
 			<ul className='card-text-list'>
 				{ingredients.map((ingredient, i) => (
 					<li key={i}>{ingredient.text}</li>

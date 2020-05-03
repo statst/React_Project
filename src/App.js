@@ -19,7 +19,7 @@ function App() {
 		APP_ID: '013e9ac4',
 	};
 	const [recipe, setRecipe] = useState([]);
-	const [searchString, setSearchString] = useState('almond ice cream');
+	const [searchString, setSearchString] = useState('');//almond ice cream
 	const [lastSearch, setLastSearch] = useState('');
 	const [query, setQuery] = useState(false);
 	useEffect(() => {
@@ -56,12 +56,12 @@ function App() {
 					</div>
 				</Link>
 			</nav>
-				{/* <SearchHeader lastSearch={lastSearch} /> */}
 			<SearchForm
 				handleChange={handleChange}
 				handleSubmit={handleSubmit}
 				searchString={searchString}
 			/>
+			<SearchHeader lastSearch={lastSearch} />
 			<Route
 				path='/'
 				exact={true}
