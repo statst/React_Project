@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('/Images/board-bunch-cooking-food-349609.jpg');
+  /* background-image: url('/Images/board-bunch-cooking-food-349609.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
