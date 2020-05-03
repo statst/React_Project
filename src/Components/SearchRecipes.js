@@ -9,6 +9,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function SearchRecipes(props) {
+	if (!props.recipe.length) {
+		return <h2>No Recipe Found! Please enter correct input.</h2>;
+	}
 	return (
 		<div>
 			<Container>
