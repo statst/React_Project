@@ -106,10 +106,10 @@ font-size: 24px;
 
 h2{
 margin: 0;
-color: #0f885a;
+color: #3a4641;
 font-style: inherit;
 font-family: "Lucida Console", Courier, monospace;
-font-size: 4.9vw;
+font-size: 10px;
 font-style: oblique;
  text-shadow: 2px 2px;
 }
@@ -168,6 +168,7 @@ font-family: "Lucida Console", Courier, monospace;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-shadow: 1px 1px;
 }
+
 .create{
 font-size: 18px;
 color: rgb(51, 37, 37);
