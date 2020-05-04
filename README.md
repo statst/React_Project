@@ -38,18 +38,27 @@ This is what app looks like
 * As a user, I would like to filter recipes by type, so that I can more easily select recipes based on the type of recipe I'm interested in making a dish.
 
 
+### Technologies Used
+- React
+- React bootstrap
+- React Router DOM
+
+
 ##
 **_Installation Instructions_**
 
 To set up app locally on your system: 
 
-Fork and clone this repository
+* Install VsCode locally and ensure it is running.
 
-Install npm dependencies
+* Fork and clone this repository
 
-Install VsCode locally and ensure it is running.
+* Change into new directory and open file into VsCode
 
-Lastly, start your server using npm start command in CLI.
+* Install npm dependencies
+
+
+* Lastly, start your server using npm start command in CLI.
 
 ##
 **_Contribute_**
