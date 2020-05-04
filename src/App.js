@@ -52,7 +52,7 @@ function App() {
 				<Link to='/'>
 					<div className='Heading'>
 						<h1>CookPot</h1>
-						<p className="text-p"> Find your favorite recipes here</p>
+						<p className='text-p'> Find your favorite recipes here</p>
 					</div>
 				</Link>
 			</nav>
@@ -84,7 +84,6 @@ function App() {
 					return <RecipeList match={routerProps.match} recipe={recipe} />;
 				}}
 			/>
-			{/* <SearchHeader lastSearch={lastSearch} /> */}
 			<Footer />
 		</div>
 	);
