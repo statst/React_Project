@@ -144,8 +144,9 @@ font-style: oblique;
  text-shadow: 1px 1px;
 }
 .calorie{
-font-size: 2.0vw;
-color: rgb(66, 78, 78);
+font-size: 20px;
+color: rgb(85, 59, 10);
+font-weight: bold;
 }
 ul{
 margin: 0;
@@ -157,10 +158,11 @@ text-align: left;
 }
 .card-text{
 font-family: "Lucida Console", Courier, monospace;
-font-size: 2.0vw;
+font-size: 20px;
 font-style: inherit;
 text-align: left;
-color: #464e49;
+color: #6b310b;
+font-weight: bold;
 }
 .success{
 background-color: rgb(206, 204, 196);
@@ -194,11 +196,6 @@ font-weight: bold;
 @media (min-width: 600px) {
   .card-text-list{
   font-size: 20px;
-  }
-  .card-text{
-     font-size: 22px;
-     color: brown;
-     font-weight: bold;
   }
   .footer{
   font-size: 20px;

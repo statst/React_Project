@@ -9,9 +9,10 @@ import SearchHeader from './Components/SearchHeader';
 import nextId from 'react-id-generator';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import DisplayRecipe from './Components/DisplayRecipe';
+// import DisplayRecipe from './Components/DisplayRecipe';
 import Recipe from './Components/Recipe';
 import Footer from './Components/Footer';
+import SearchRecipe from './Components/SearchRecipes';
 
 function App() {
 	const searchOptions = {
@@ -22,6 +23,7 @@ function App() {
 	const [searchString, setSearchString] = useState('');//almond ice cream
 	const [lastSearch, setLastSearch] = useState('');
 	const [query, setQuery] = useState(false);
+	
 	useEffect(() => {
 		getRecipes(searchString);
 		console.log('use effect');
@@ -67,7 +69,7 @@ function App() {
 				exact={true}
 				render={() => {
 					return (
-						<DisplayRecipe
+						<SearchRecipe
 							getRecipes={getRecipes}
 							handleChange={handleChange}
 							handleSubmit={handleSubmit}
