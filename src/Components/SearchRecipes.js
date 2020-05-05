@@ -24,7 +24,7 @@ function SearchRecipes(props) {
 								/>
 								<Card.Body>
 									{/* <Card.Title>{dish.label}</Card.Title> */}
-									<Link to={`/RecipeList/${dish.recipe.label}`}>
+									<Link to={`/Recipe/${dish.recipe.label}`}>
 										<p>{dish.recipe.label}</p>
 									</Link>
 								</Card.Body>

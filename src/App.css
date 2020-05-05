@@ -24,7 +24,6 @@ body {
 .Heading{
   padding: 30px;
   color: rgb(34, 27, 6);
-  margin-bottom: 2rem;
   background-image: url('/Images/fruit-salads-in-plate-1640774.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -33,6 +32,7 @@ body {
   font-size: 20px;
   text-shadow: 0px 0px;
   font-weight: bold;
+  margin: 0 -2rem 2rem;
 }
 div.app {
   border: 2px solid black;
@@ -212,8 +212,8 @@ font-weight: bold;
    background-image: url('/Images/fruit-salads-in-plate-1640774.jpg');
    background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed;
-  background-size: cover;  */   
+  background-attachment: fixed;
+  background-size: cover;    
 }
 button + button,
   input + button {
