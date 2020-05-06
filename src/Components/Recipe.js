@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Recipe = ({ title, calories, img, ingredients, url }) => {
+const Recipe = ({ recipe, title, calories, img, ingredients, url }) => {
 	const dishDetails = (
 		<a href={url} target='_blank' rel='noopener noreferrer'>
-			<button className='success'>Click to see recipe details</button>
+			<button className='success'>Recipe details</button>
 		</a>
 	);
 	return (

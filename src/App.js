@@ -8,7 +8,6 @@ import SearchHeader from './Components/SearchHeader';
 import nextId from 'react-id-generator';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import Home from './Components/DisplayRecipes';
 import Recipe from './Components/Recipe';
 import Footer from './Components/Footer';
 
@@ -43,7 +42,7 @@ function App() {
 	function handleSubmit(event) {
 		event.preventDefault();
 		getRecipes(searchString);
-		setQuery(!query);
+		// setQuery(!query);
 	}
 	return (
 		<div className='App'>
@@ -55,16 +54,22 @@ function App() {
 					</div>
 				</Link>
 			</nav>
+			<SearchForm
+				handleChange={handleChange}
+				handleSubmit={handleSubmit}
+				searchString={searchString}
+			/>
 			<Route
 				path='/'
 				exact={true}
 				render={() => {
 					return (
-						<Home
+						<SearchRecipes
 							getRecipes={getRecipes}
 							handleChange={handleChange}
 							handleSubmit={handleSubmit}
 							searchString={searchString}
+							lastSearch={lastSearch}
 							recipe={recipe}
 						/>
 					);
