@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import SearchForm from './Components/SearchForm';
@@ -9,10 +8,9 @@ import SearchHeader from './Components/SearchHeader';
 import nextId from 'react-id-generator';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-// import DisplayRecipe from './Components/DisplayRecipe';
+import Home from './Components/DisplayRecipes';
 import Recipe from './Components/Recipe';
 import Footer from './Components/Footer';
-import SearchRecipe from './Components/SearchRecipes';
 
 function App() {
 	const searchOptions = {
@@ -20,10 +18,9 @@ function App() {
 		APP_ID: '013e9ac4',
 	};
 	const [recipe, setRecipe] = useState([]);
-	const [searchString, setSearchString] = useState('');//almond ice cream
+	const [searchString, setSearchString] = useState('');
 	const [lastSearch, setLastSearch] = useState('');
 	const [query, setQuery] = useState(false);
-	
 	useEffect(() => {
 		getRecipes(searchString);
 		console.log('use effect');
@@ -31,8 +28,8 @@ function App() {
 	function getRecipes(searchString) {
 		const url = `https://api.edamam.com/search?q=${searchString}&app_id=${searchOptions.APP_ID}&app_key=${searchOptions.key}`;
 		axios
-		.get(url)
-		.then((response) => {
+			.get(url)
+			.then((response) => {
 				setRecipe(response.data.hits);
 				console.log(response.data.hits);
 				setLastSearch(searchString);
@@ -46,7 +43,7 @@ function App() {
 	function handleSubmit(event) {
 		event.preventDefault();
 		getRecipes(searchString);
-		// setQuery(!query);
+		setQuery(!query);
 	}
 	return (
 		<div className='App'>
@@ -54,22 +51,16 @@ function App() {
 				<Link to='/'>
 					<div className='Heading'>
 						<h1>CookPot</h1>
-						<p className='text-p'> Find your favorite recipes here</p>
+						<p>Click here to find your favorite recipes</p>
 					</div>
 				</Link>
 			</nav>
-			<SearchForm
-				handleChange={handleChange}
-				handleSubmit={handleSubmit}
-				searchString={searchString}
-			/>
-			<SearchHeader lastSearch={lastSearch} />
 			<Route
 				path='/'
 				exact={true}
 				render={() => {
 					return (
-						<SearchRecipe
+						<Home
 							getRecipes={getRecipes}
 							handleChange={handleChange}
 							handleSubmit={handleSubmit}
@@ -81,11 +72,12 @@ function App() {
 			/>
 
 			<Route
-				path='/RecipeList/:label'
+				path='/RecipeList'
 				render={(routerProps) => {
 					return <RecipeList match={routerProps.match} recipe={recipe} />;
 				}}
 			/>
+			<SearchHeader lastSearch={lastSearch} />
 			<Footer />
 		</div>
 	);
