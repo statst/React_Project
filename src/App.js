@@ -77,7 +77,8 @@ function App() {
 			/>
 
 			<Route
-				path='/RecipeList'
+				path='/RecipeList/:label'
+				// exact = {true} 
 				render={(routerProps) => {
 					return <RecipeList match={routerProps.match} recipe={recipe} />;
 				}}

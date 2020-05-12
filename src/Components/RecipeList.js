@@ -9,24 +9,25 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const RecipeList = (props) => {
+	console.log(props.recipe[0]);
+let recipe = props.recipe[0] && props.recipe[0].recipe;
 	return (
 		<div>
 			<Container>
 				<Row>
-					{props.recipe.map((dish, i) => (
-						<Recipe
-							key={i}
-							title={dish.recipe.label}
-							calories={dish.recipe.calories}
-							img={dish.recipe.image}
-							ingredients={dish.recipe.ingredients}
-							url={dish.recipe.url}
-						/>
-					))}
+					
+						{recipe && <Recipe
+							title={recipe.label}
+							calories={recipe.calories}
+							img={recipe.image}
+							ingredients={recipe.ingredients}
+							url={recipe.url}
+						/>}
 				</Row>
 			</Container>
 		</div>
-	);
-};
+	
+	)
+}
 
 export default RecipeList;
