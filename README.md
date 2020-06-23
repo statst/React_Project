@@ -5,6 +5,10 @@
 
 My app is called CookPot. It's a recipe app designed for users who have hard time figuring out which meal to cook. Users can search recipes across the world and then click on a specific dish to see description of recipe. I used React, React Bootstrap and react Hooks to build this project.
 
+# Deployed Application
+
+Search your favorite recipe here: [CookPot](https://cookpot.herokuapp.com/)
+
 ##
 **_Wireframes_**
 
@@ -65,4 +69,3 @@ To set up app locally on your system:
 
 Source code: [Source Code](https://github.com/statst/React_Project)
 
-Search your favorite recipe here: [CookPot](https://cookpot.herokuapp.com/)
