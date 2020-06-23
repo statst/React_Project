@@ -63,6 +63,6 @@ To set up app locally on your system:
 ##
 **_Contribute_**
 
-Source code: https://github.com/statst/React_Project
+Source code: [Source Code](https://github.com/statst/React_Project)
 
-Search your favorite recipe here: https://cookpot.herokuapp.com/
+Search your favorite recipe here: [CookPot](https://cookpot.herokuapp.com/)
