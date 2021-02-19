@@ -197,17 +197,16 @@ font-weight: bold;
   .card-text-list{
   font-size: 20px;
   }
-  .footer{
-  font-size: 20px;
-  color: rgb(85, 78, 78);
-  font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-shadow: 1px 1px;
-  margin-bottom: 15px;
-  margin-top:350px;
-  background-color: rgb(189, 186, 182);
-  height: 40px;
-}
+  footer{
+    font-size: 20px;
+    color: rgb(51, 37, 37);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* text-shadow: 1px 1px; */
+    background-color: #feffff;
+    margin-top: 30rem;
+    margin-bottom: auto;
+  }
 .Heading{
    background-image: url('/Images/fruit-salads-in-plate-1640774.jpg');
    background-position: center;

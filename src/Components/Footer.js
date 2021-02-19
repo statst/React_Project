@@ -6,9 +6,12 @@ function Footer() {
 			<footer>
 				<p className='footer'>
 					Connect on {''}
-					<a href='https://www.linkedin.com/in/jyoti-shinde/'>LinkdeIn</a>
+					<a href='https://www.linkedin.com/in/jyoti-shinde/'>LinkedIn</a>
 				</p>
-				<p className='create'>Made with &#9829; by Jyoti Shinde</p>
+				<p className='create'>
+					{' '}
+					&copy; {new Date().getFullYear()} Copyright: Jyoti Shinde
+				</p>
 			</footer>
 		</>
 	);
