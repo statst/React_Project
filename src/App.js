@@ -50,7 +50,7 @@ function App() {
 				<Link to='/'>
 					<div className='Heading'>
 						<h1>CookPot</h1>
-						<p>Click here to find your favorite recipes</p>
+						<p>Find your favorite recipes</p>
 					</div>
 				</Link>
 			</nav>
